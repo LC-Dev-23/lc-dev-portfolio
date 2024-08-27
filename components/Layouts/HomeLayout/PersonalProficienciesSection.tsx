@@ -1,10 +1,11 @@
+import Section from '@/components/Section'
 import React from 'react'
 
 const PersonalProficienciesSection = () => {
     return (
-        <section>
-            <h2>Personal Proficiencies</h2>
-        </section>
+        <Section>
+            <h2 className="text-center">Personal Proficiencies</h2>
+        </Section>
     )
 }
 
