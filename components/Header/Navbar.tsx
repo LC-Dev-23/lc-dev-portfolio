@@ -54,7 +54,7 @@ const Navbar = () => {
                 <li><ModeToggle /></li>
             </ul>
             <Link className='hidden lg:block' href={"/contact"}>
-                <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit  dark:hover:text-primaryRed px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-primaryRed"}`}>CONTACT</Button>
+                <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-primaryRed dark:hover:text-primaryRed"}`}>CONTACT</Button>
             </Link>
             <Button onClick={toggleMenu} variant="link" size={'icon'} className='h-10 w-10 lg:hidden dark:text-primaryBlack text-primaryWhite text-4xl bg-transparent'>{isOpen ? <RiCloseLine /> : <RiMenu2Line />}</Button>
         </nav>
