@@ -1,9 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-module.exports = {
+const nextConfig = {
   images: {
-    domains: ["www.lc-dev.site", "lc-dev.site"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.lc-dev.site",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "lc-dev.site",
+        pathname: "**",
+      }
+    ],
   },
 };
+
 export default nextConfig;
