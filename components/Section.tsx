@@ -5,7 +5,7 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
 }
 const Section: FC<SectionProps> = ({ children, ...props }) => {
     return (
-        <section {...props} className={`min-h-screen mx-auto h-auto max-w-[90%] lg:max-w-[80%] ${props.className || ""}`}>
+        <section {...props} className={`min-h-screen mx-auto h-auto max-w-[80%] ${props.className || ""}`}>
             {children}
         </section>
     )
