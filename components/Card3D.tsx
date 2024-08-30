@@ -10,8 +10,8 @@ interface CardProps {
 
 const Card3D = ({ title, description, cardData }: CardProps) => {
   return (
-    <CardContainer className="w-full lg:w-[25rem]">
-      <CardBody className="bg-transparent border dark:border-white/[0.5] border-black/[0.5] rounded-xl relative dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
+    <CardContainer className="w-full">
+      <CardBody className="bg-transparent border dark:border-white/[0.2] border-black/[0.2] rounded-xl relative dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
         <CardItem
           as="h3"
           translateZ="60"
@@ -22,7 +22,7 @@ const Card3D = ({ title, description, cardData }: CardProps) => {
         <CardItem
           as="h4"
           translateZ="80"
-          className="text-base font-bold text-primaryBlack dark:text-accentSoftGray mb-4 font-special italic"
+          className="text-base text-primaryBlack dark:text-accentSoftGray mb-4 font-special italic"
         >
           {description}
         </CardItem>
@@ -33,7 +33,7 @@ const Card3D = ({ title, description, cardData }: CardProps) => {
         >
           <ul>
             {cardData.map((listItem) => (
-              <li className="mb-2 pl-4 list-disc list-inside" key={title} dangerouslySetInnerHTML={{ __html: listItem }}></li>
+              <li className="marker:text-primaryRed dark:text-accentSoftGray mb-2 pl-4 list-disc list-inside" key={title} dangerouslySetInnerHTML={{ __html: listItem }}></li>
             ))}
           </ul>
         </CardItem>
