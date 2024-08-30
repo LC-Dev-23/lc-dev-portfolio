@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card3D = ({ title, description, cardData }: CardProps) => {
   return (
-    <CardContainer className="w-[80%] lg:w-[25rem]">
+    <CardContainer className="w-full lg:w-[25rem]">
       <CardBody className="bg-transparent border dark:border-white/[0.5] border-black/[0.5] rounded-xl relative dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
         <CardItem
           as="h3"
