@@ -1,9 +1,6 @@
 import Section from '@/components/Section'
 import { MovingCards } from "@/components/MovingCards";
 
-
-
-
 const PersonalProficienciesSection = () => {
     return (
         <Section className="!min-h-[50vh] py-20">
