@@ -1,9 +1,13 @@
-import React from 'react'
+import HeroAnimationSection from '@/components/Layouts/ProjectLayout/HeroAnimationSection'
+import ProjectSection from '@/components/Layouts/ProjectLayout/ProjectSection'
+import GrowthSection from '@/components/Layouts/ProjectLayout/GrowthSection'
 
 const ProjectPage = () => {
   return (
     <main>
-      <h1>Project</h1>
+      <HeroAnimationSection />
+      <ProjectSection />
+      <GrowthSection />
     </main>
   )
 }
