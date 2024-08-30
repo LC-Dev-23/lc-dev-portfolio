@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { FaEnvelope, FaFacebook, FaGithub, FaGitlab, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
+import SocmedIcons from '../SocmedIcons';
 
 const Footer = () => {
   return (
@@ -18,12 +19,7 @@ const Footer = () => {
         </div>
         <div className='row-[3/4] lg:row-[1/2] lg:col-[2/3]'>
           <p className="font-bold text-primaryRed pb-2">Find me on</p>
-          <ul className="text-center text-3xl flex justify-center gap-4">
-            <li><FaFacebook /></li>
-            <li><FaLinkedin /></li>
-            <li><FaGithub /></li>
-            <li><FaGitlab /></li>
-          </ul>
+          <SocmedIcons className="text-center text-3xl flex justify-center gap-4" />
           <p className="pt-2">Copyright © 2024 | Developed by <span className="font-special font-semibold text-primaryRed">LC Dev</span></p>
         </div>
         <div className="mx-auto">
