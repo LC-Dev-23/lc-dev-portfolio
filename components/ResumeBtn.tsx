@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/moving-border'
+import { Button } from './ui/moving-border'
 import { RiDownloadLine } from 'react-icons/ri'
 import {
     Tooltip,
@@ -6,6 +6,7 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+
 
 const ResumeBtn = () => {
     return (
