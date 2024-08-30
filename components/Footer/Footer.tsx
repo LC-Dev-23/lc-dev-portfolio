@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="relative font-sans text-base text-center bottom-0 w-full px-[5%] lg:px-[10%] dark:bg-primaryWhite dark:text-primaryTextDarkGray bg-primaryBlack text-primaryTextWhite backdrop-blur-sm shadow-sm rounded-t-xl">
       <div className="grid grid-cols-1 grid-rows-3 gap-5 lg:gap-0  lg:grid-cols-3 lg:grid-rows-1 py-5">
-        <div className="mx-auto lg:mx-0">
+        <div className="mx-auto">
           <Image
             className='w-auto h-16 dark:invert filter-none pb-2 mx-auto lg:mx-0'
             src="/images/lc-dev-logo-white.png"
