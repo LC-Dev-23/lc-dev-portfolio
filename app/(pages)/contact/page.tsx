@@ -1,9 +1,12 @@
-import React from 'react'
+
+import ContactFormSection from '@/components/Layouts/ContactLayout/ContactFormSection'
+import ContactInfoSection from '@/components/Layouts/ContactLayout/ContactInfoSection'
 
 const ContactPage = () => {
   return (
     <main>
-      <h1>Contact Us</h1>
+      <ContactInfoSection />
+      <ContactFormSection />
     </main>
   )
 }
