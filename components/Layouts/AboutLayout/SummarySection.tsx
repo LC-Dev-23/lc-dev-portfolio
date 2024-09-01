@@ -7,7 +7,7 @@ export const AboutMe = () => {
   return (
     <div className="flex flex-col text-base lg:text-lg font-normal font-sans h-[20rem] overflow-y-scroll px-5">
       <h3 className="text-2xl md:text-3xl font-semibold font-display dark:text-primaryWhite text-primaryBlack mb-2">About Me</h3>
-      <p>I've been working as a web developer for two years, and I enjoy it a lot. The field is always evolving, which keeps me motivated to learn and tackle new problems. My curiosity and interest in technology drive my enthusiasm for development. I find it rewarding to turn an idea into a functional, user-friendly website.</p>
+      <p>I&apos;ve been working as a web developer for two years, and I enjoy it a lot. The field is always evolving, which keeps me motivated to learn and tackle new problems. My curiosity and interest in technology drive my enthusiasm for development. I find it rewarding to turn an idea into a functional, user-friendly website.</p>
       <div>
         <ul className="grid grid-flow-row lg:grid-cols-2 gap-2 mt-2">
           <li>Name: <span className="dark:text-primaryWhite">Lord Christian Agra</span></li>
@@ -31,7 +31,7 @@ export const Experience = () => {
       <p className="flex justify-between"><span>MNLeistung Inc.</span> <span>Cainta, Rizal, Philippines</span></p>
       <ul className="marker:text-primaryRed dark:text-accentSoftGray flex flex-col gap-2 pl-4 pt-4 pb-10 list-disc list-inside">
         <li>
-          Significantly improved our company website's performance and
+          Significantly improved our company website&apos;s performance and
           SEO, achieving a perfect Lighthouse score and reducing load time
           to 1 second or less, resulting in enhanced user experience.
         </li>
