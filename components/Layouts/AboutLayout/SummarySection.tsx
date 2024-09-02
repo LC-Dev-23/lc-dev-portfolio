@@ -120,7 +120,7 @@ const SummarySection = () => {
     <Section className="py-20 lg:py-40 !min-h-[50vh]">
       <h2 className="text-2xl md:text-3xl font-semibold font-display text-center py-10"><span className="font-special relative after:absolute after:block after:w-[130%] after:h-16 after:bg-transparent after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12 after:rotate-1">Summary</span></h2>
       <div className="flex flex-col lg:flex-row  justify-center gap-5 lg:gap-10">
-        <menu className="flex lg:flex-col gap-5 w-[20rem]">
+        <menu className="grid grid-cols-2 lg:flex lg:flex-col lg:flex-wrap gap-2 lg:gap-5 lg:w-[20rem]">
           <li>
             <Button
               variant={"outline"}

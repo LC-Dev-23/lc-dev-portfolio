@@ -31,7 +31,7 @@ export default function CarouselImg({ imgData }: ImgType) {
         <Carousel
             plugins={[plugin.current]}
             orientation="horizontal"
-            className="w-full lg:w-[50%] mx-auto my-5 max-w-4xl">
+            className="w-full lg:h-[28rem] flex items-center mx-auto my-5 max-w-xl">
             <CarouselContent>
                 {imgData.map(({ image }) => (
                     <CarouselItem key={image.alt}>
