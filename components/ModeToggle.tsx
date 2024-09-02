@@ -5,9 +5,10 @@ import { useTheme } from "next-themes"
 
 import { useEffect, useState } from "react"
 import { LuMoon, LuSun } from "react-icons/lu"
-
-
-export function ModeToggle() {
+interface style {
+    style: string;
+}
+export function ModeToggle({ style }: style) {
 
     const links = [
         { href: '/', text: 'HOME' },
@@ -34,7 +35,7 @@ export function ModeToggle() {
 
 
     return (
-        <Button onClick={toggleDarkMode} className="dark:text-black text-white" variant="link" size="icon" aria-label="Click to change theme">
+        <Button onClick={toggleDarkMode} className={`${style}`} variant="link" size="icon" aria-label="Click to change theme">
             {theme === 'dark' ? <LuSun className="h-[1.2rem] w-[1.2rem]" /> : <LuMoon className="h-[1.2rem] w-[1.2rem]" />}
         </Button>
     )

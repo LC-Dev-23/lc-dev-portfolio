@@ -1,21 +1,22 @@
 "use client"
-import { useState } from 'react'
 import Link from 'next/link';
 import Image from 'next/image'
 import { ModeToggle } from '../ModeToggle'
-import { RiCloseLine, RiMenu2Line } from 'react-icons/ri';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
+import Sidebar from './Sidebar';
 
-interface Link {
+
+
+export interface NavLinkType {
     href: string;
     text: string;
-    className?: string; // Optional
+    className?: string;
 }
 
 const Navbar = () => {
 
-    const links: Link[] = [
+    const links: NavLinkType[] =  [
         { href: '/', text: 'HOME' },
         { href: '/about', text: 'ABOUT' },
         { href: '/project', text: 'PROJECT' },
@@ -24,12 +25,6 @@ const Navbar = () => {
     ];
 
     const pathname = usePathname();
-
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
 
     return (
         <nav className="flex justify-between items-center min-h-20 text-sm">
@@ -44,19 +39,19 @@ const Navbar = () => {
                 />
             </Link>
             <ul className={`text-accentSoftGray font-semibold gap-10 items-center hidden lg:flex`}>
-                {links.map(({ href, text, className }: Link) => (
+                {links.map(({ href, text, className }) => (
                     <li key={href} className={`${pathname === href ? 'dark:text-primaryBlack text-primaryWhite font-bold scale-110 relative after:absolute after:block after:w-full after:h-0.5 after:bg-primaryRed after:bottom-[-.5rem] after:left-0 after:transition-transform after:duration-300 hover:after:transform hover:after:scale-x-100' : 'hover:text-accentBrightRed hover:scale-110'} ${className}`}>
                         <Link href={href} >
                             {text}
                         </Link>
                     </li>
                 ))}
-                <li><ModeToggle /></li>
+                <li><ModeToggle style={"dark:text-black text-white"} /></li>
             </ul>
             <Link className='hidden lg:block' href={"/contact"}>
                 <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
             </Link>
-            <Button onClick={toggleMenu} variant="link" size={'icon'} className='h-10 w-10 lg:hidden dark:text-primaryBlack text-primaryWhite text-4xl bg-transparent'>{isOpen ? <RiCloseLine /> : <RiMenu2Line />}</Button>
+            <Sidebar navLinks={links} />
         </nav>
     )
 }
