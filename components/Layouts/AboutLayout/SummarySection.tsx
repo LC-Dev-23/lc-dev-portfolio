@@ -98,7 +98,7 @@ export const Skills = () => {
   return (
     <div className="text-base lg:text-lg font-normal font-sans h-[20rem] px-5">
       <h3 className="text-2xl md:text-3xl font-semibold font-display dark:text-primaryWhite text-primaryBlack mb-4">My Skills</h3>
-      <ul className="marker:text-primaryRed dark:text-accentSoftGray flex flex-col gap-2 pl-4 pt-4 list-disc list-inside">
+      <ul className="marker:text-primaryRed dark:text-accentSoftGray flex flex-col gap-2 pl-4 list-disc list-inside">
         <li>Strong understanding of HTML, CSS, and JavaScript.</li>
         <li>Skilled in building responsive, cross-browser compatible websites.</li>
         <li>Ability to quickly learn and adapt to new technologies and frameworks.</li>
