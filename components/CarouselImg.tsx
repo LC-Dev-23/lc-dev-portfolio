@@ -40,7 +40,7 @@ export default function CarouselImg({ imgData }: ImgType) {
                                 className="object-cover drop-shadow-logo-shadow"
                                 src={image.src}
                                 width={1000}
-                                height={706}
+                                height={445}
                                 alt={image.alt}
                                 priority={false}
                                 loading={"lazy"}
