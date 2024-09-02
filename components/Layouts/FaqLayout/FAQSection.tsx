@@ -34,8 +34,8 @@ const FAQSection = () => {
                     <AccordionContent>
                         I prefer remote or hybrid work setups.
                         I find commuting to be a significant time drain,
-                        and since there's no effective solution for traffic,
-                        I'd rather use that time to focus on my tasks and contribute more effectively.
+                        and since there&apos;s no effective solution for traffic,
+                        I&apos;d rather use that time to focus on my tasks and contribute more effectively.
                     </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
