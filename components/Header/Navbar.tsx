@@ -19,7 +19,7 @@ const Navbar = () => {
         { href: '/', text: 'HOME' },
         { href: '/about', text: 'ABOUT' },
         { href: '/project', text: 'PROJECT' },
-        { href: '/services', text: 'SERVICES' },
+        { href: '/faq', text: 'FAQ' },
         { href: '/contact', text: 'CONTACT', className: 'block lg:hidden' },
     ];
 
