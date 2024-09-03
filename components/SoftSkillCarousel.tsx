@@ -112,7 +112,7 @@ const SoftSkillCarousel = () => {
                                 <CardTitle>{personality.title}</CardTitle>
                             </CardHeader>
                             <CardContent >
-                                <ul className="min-h-24">
+                                <ul className="min-h-20 md:min-h-24 text-sm md:text-base">
                                     {personality.listItems.map((listItem, index) => (
                                         <li className="marker:text-primaryRed pl-4 list-disc list-inside" key={index}>{listItem}</li>
                                     ))}

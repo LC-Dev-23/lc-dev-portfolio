@@ -1,3 +1,4 @@
+import H2 from '@/components/H2'
 import Section from '@/components/Section'
 import {
     Accordion,
@@ -8,8 +9,8 @@ import {
 
 const FAQSection = () => {
     return (
-        <Section className="py-20 lg:py-40 !min-h-[55rem]">
-            <h2 className="text-2xl md:text-3xl font-semibold font-display text-center py-10"><span className="font-special relative after:absolute after:block after:w-[170%] after:h-16 after:bg-transparent after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12 after:rotate-1">FAQ</span></h2>
+        <Section className="py-20 lg:py-40 flex flex-col justify-center">
+            <H2 borderStyle="after:w-[200%] md:after:w-[180%]">FAQ</H2>
             <Accordion type="single" collapsible className="w-full md:w-[80%] mx-auto">
                 <AccordionItem value="item-1">
                     <AccordionTrigger>What technologies do you specialize in?</AccordionTrigger>
@@ -56,10 +57,10 @@ const FAQSection = () => {
                 <AccordionItem value="item-6">
                     <AccordionTrigger>What are your system specifications?</AccordionTrigger>
                     <AccordionContent>
-                    I use a Ryzen 5 5600 CPU, an RX 6600 8GB GPU, and 32GB of RAM. 
-                    I have a 1TB internal drive available for storage and a 1TB external drive for backups. 
-                    My setup includes a dual-monitor configuration for comfortable work, a Razer Kiyo X webcam, 
-                    and a Jabra MS 20 headset for clear communication during meetings.
+                        I use a Ryzen 5 5600 CPU, an RX 6600 8GB GPU, and 32GB of RAM.
+                        I have a 1TB internal drive available for storage and a 1TB external drive for backups.
+                        My setup includes a dual-monitor configuration for comfortable work, a Razer Kiyo X webcam,
+                        and a Jabra MS 20 headset for clear communication during meetings.
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>

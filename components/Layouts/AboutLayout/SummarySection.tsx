@@ -1,4 +1,5 @@
 "use client"
+import H2 from "@/components/H2";
 import Section from "@/components/Section"
 import { Button } from "@/components/ui/button"
 import { useState } from "react";
@@ -75,21 +76,21 @@ export const Education = () => {
   return (
     <div className="flex flex-col text-sm mg:text-base lg:text-lg font-normal font-sans h-[20rem] overflow-y-scroll px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold font-display dark:text-primaryWhite text-primaryBlack mb-4">My Education</h3>
-      <h4 className="flex justify-between"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Bachelor of Science in Information Technology</span> <span>2018 - 2022</span></h4>
-      <p className="flex justify-between"><span>Philippine Best Training System Colleges</span> <span>Binangonan, Rizal, Philippines</span></p>
+      <h4 className="flex flex-col md:flex-row md:justify-between"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Bachelor of Science in Information Technology</span> <span>2018 - 2022</span></h4>
+      <p className="flex flex-col mt-2 md:mt-0 md:flex-row md:justify-between"><span>Philippine Best Training System Colleges</span> <span>Binangonan, Rizal, Philippines</span></p>
 
-      <h4 className="flex justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Information and
+      <h4 className="flex flex-col md:flex-row md:justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Information and
         Communications Technology</span> <span>2016 - 2018</span></h4>
-      <p className="flex justify-between"><span>Philsin College Foundation Inc.</span> <span>Teresa, Rizal, Philippines</span></p>
+      <p className="flex flex-col mt-2 md:mt-0 md:flex-row md:justify-between"><span>Philsin College Foundation Inc.</span> <span>Teresa, Rizal, Philippines</span></p>
       <h4 className="text-base md:text-xl font-semibold font-display dark:text-primaryWhite text-primaryBlack mt-4">Online Courses</h4>
-      <h5 className="flex justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">React JS - The Complete Guide
+      <h5 className="flex flex-col md:flex-row md:justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">React JS - The Complete Guide
         2024 (incl. Next.js, Redux)</span></h5>
-      <p className="flex justify-between"><span>Udemy/Academind - Maximilian Schwarzmüller</span> </p>
+      <p className="flex flex-col md:flex-row md:justify-between"><span>Udemy/Academind - Maximilian Schwarzmüller</span> </p>
       <h5 className="mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">JavaScript Essentials 1</span></h5>
       <p className="">Cisco Networking Academy</p>
-      <h5 className="flex justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">JavaScript Essentials 2</span> <span>(inprogress)</span></h5>
+      <h5 className="flex flex-col md:flex-row md:justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">JavaScript Essentials 2</span> <span>(inprogress)</span></h5>
       <p className="">Cisco Networking Academy</p>
-      <h5 className="flex justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Graphic Design Masterclass - Learn GREAT Design</span> <span>(inprogress)</span></h5>
+      <h5 className="flex flex-col md:flex-row md:justify-between mt-4"><span className="text-accentBrightRed italic font-special text-base md:text-md lg:text-xl">Graphic Design Masterclass - Learn GREAT Design</span> <span>(inprogress)</span></h5>
       <p>Udemy - Lindsay Marsh</p>
     </div>
   )
@@ -117,8 +118,8 @@ const SummarySection = () => {
     setSelectedSection(section);
   };
   return (
-    <Section className="py-20 lg:py-40 !min-h-[50vh]">
-      <h2 className="text-2xl md:text-3xl font-semibold font-display text-center py-10"><span className="font-special relative after:absolute after:block after:w-[130%] after:h-16 after:bg-transparent after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12 after:rotate-1">Summary</span></h2>
+    <Section className="py-20 lg:py-40 flex flex-col justify-center items-center">
+      <H2 borderStyle="after:w-[150%] lg:after:w-[135%]">Summary</H2>
       <div className="flex flex-col lg:flex-row  justify-center gap-5 lg:gap-10">
         <menu className="grid grid-cols-2 lg:flex lg:flex-col lg:flex-wrap gap-2 lg:gap-5 lg:w-[20rem]">
           <li>
@@ -164,7 +165,6 @@ const SummarySection = () => {
           {selectedSection === 'experience' && <Experience />}
           {selectedSection === 'education' && <Education />}
           {selectedSection === 'skills' && <Skills />}
-
         </div>
       </div>
     </Section>

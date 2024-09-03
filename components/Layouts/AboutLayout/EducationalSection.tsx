@@ -1,10 +1,11 @@
+import H2 from '@/components/H2'
 import Section from '@/components/Section'
 import Image from 'next/image'
 
 const EducationalSection = () => {
   return (
-    <Section className="py-20 !min-h-[50vh]">
-      <h2 className="text-2xl md:text-3xl font-semibold font-display text-center py-10"><span className="font-special relative after:absolute after:block after:w-[115%] after:h-16 after:bg-transparent after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12 after:rotate-1">Educational Background</span></h2>
+    <Section className="py-20 flex flex-col justify-center">
+      <H2 borderStyle="after:w-[120%] md:after:w-[115%]"> Educational Background</H2>
       <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-5 lg:gap-10">
         <article className="text-primaryBlack dark:text-accentSoftGray text-base lg:text-lg font-normal font-sans lg:max-w-[30rem] xl:max-w-[50rem] border dark:border-white/[0.2] border-black/[0.2] shadow-xl rounded-xl p-5 lg:p-10">
           <p>

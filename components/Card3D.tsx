@@ -15,21 +15,21 @@ const Card3D = ({ title, description, cardData }: CardProps) => {
         <CardItem
           as="h3"
           translateZ="60"
-          className="text-xl font-bold text-primaryBlack dark:text-secondaryLightGray mb-1 font-display"
+          className="text-md md:text-xl font-bold text-primaryBlack dark:text-secondaryLightGray mb-1 font-display"
         >
           {title}
         </CardItem>
         <CardItem
           as="h4"
           translateZ="80"
-          className="text-base text-primaryBlack dark:text-accentSoftGray mb-4 font-special italic"
+          className="text-sm md:text-base text-primaryBlack dark:text-accentSoftGray mb-4 font-special italic"
         >
           {description}
         </CardItem>
         <CardItem
           as="div"
           translateZ="100"
-          className="text-primaryBlack text-base mt-2 dark:text-secondaryLightGray font-sans"
+          className="text-sm md:text-base text-primaryBlack mt-2 dark:text-secondaryLightGray font-sans"
         >
           <ul>
             {cardData.map((listItem) => (

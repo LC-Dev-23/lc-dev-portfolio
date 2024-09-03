@@ -1,3 +1,4 @@
+import H2 from '@/components/H2'
 import Section from '@/components/Section'
 import TechIconBtn from '@/components/TechIconBtn'
 
@@ -128,10 +129,10 @@ export const arsenalData = [
 const TechArsenalSection = () => {
 
     return (
-        <Section className="flex flex-col py-20">
-            <h2 className="text-2xl md:text-3xl font-semibold font-display text-center py-10 lg:pt-20"><span className="font-special relative after:absolute after:block after:w-[120%] after:h-16 after:bg-transparent after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-4 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12 after:rotate-1">Tech Arsenal</span></h2>
+        <Section className="py-20 flex flex-col justify-center">
+            <H2 borderStyle="after:w-[135%] md:after:w-[125%]">Tech Arsenal</H2>
             <div className="flex flex-col gap-10 w-full">
-                <div className="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-10 place-content-center p-10 h-auto">
+                <div className="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-6 gap-5 lg:gap-10 place-content-center lg:p-10 h-auto">
                     {arsenalData.map((arsenalItem, index) => (
                         <TechIconBtn key={index} {...arsenalItem} />
                     ))}
