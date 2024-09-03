@@ -56,9 +56,10 @@ const FAQSection = () => {
                 <AccordionItem value="item-6">
                     <AccordionTrigger>What are your system specifications?</AccordionTrigger>
                     <AccordionContent>
-                        use a Ryzen 5 5600 CPU, an RX 6600 8GB GPU, and 32GB of RAM. For storage,
-                        I have a 1TB internal drive available for storage and a 1TB external drive for backups. Additionally,
-                        I work with a dual-monitor setup, which helps me work comfortably from home.
+                    I use a Ryzen 5 5600 CPU, an RX 6600 8GB GPU, and 32GB of RAM. 
+                    I have a 1TB internal drive available for storage and a 1TB external drive for backups. 
+                    My setup includes a dual-monitor configuration for comfortable work, a Razer Kiyo X webcam, 
+                    and a Jabra MS 20 headset for clear communication during meetings.
                     </AccordionContent>
                 </AccordionItem>
             </Accordion>
