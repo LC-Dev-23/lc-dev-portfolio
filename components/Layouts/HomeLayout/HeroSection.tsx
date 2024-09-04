@@ -9,13 +9,13 @@ const HeroSection = () => {
       <article className='lg:max-w-[30rem] xl:max-w-[40rem]'>
         <h1 className="text-3xl md:text-4xl font-semibold font-display"><span className="text-lg md:text-xl font-normal drop-shadow-2xl">Hi, <span className="text-accentBrightRed">Im</span> </span><br />Lord Christian Agra</h1>
         <h2 className="text-xl md:text-2xl font-normal font-special italic pb-2 text-accentBrightRed">Web Developer</h2>
-        <p className="text-base lg:text-lg font-normal font-sans mb-8 lg:mb-10">
+        <p className="text-base lg:text-lg font-normal font-sans mb-5 lg:mb-10">
           With 2 years of experience in building and maintaining responsive, user-friendly websites,
           I’ve gained a solid understanding of design principles and front-end technologies.
           I look forward to sharing how I create reliable, effective websites.</p>
         <div className="flex gap-4 items-center">
           <ResumeBtn />
-          <SocmedIcons className="text-xl lg:text-3xl flex gap-4" />
+          <SocmedIcons className="text-xl lg:text-3xl flex gap-2 md:gap-4" />
         </div>
       </article>
       <Image className="w-[10rem] md:w-[20rem] lg:w-[25rem] h-auto object-contain drop-shadow-2xl transform scale-x-[-1]"

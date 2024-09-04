@@ -5,6 +5,7 @@ import { ModeToggle } from '../ModeToggle'
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 import Sidebar from './Sidebar';
+import ResumeBtn from '../ResumeBtn';
 
 
 
@@ -16,7 +17,7 @@ export interface NavLinkType {
 
 const Navbar = () => {
 
-    const links: NavLinkType[] =  [
+    const links: NavLinkType[] = [
         { href: '/', text: 'HOME' },
         { href: '/about', text: 'ABOUT' },
         { href: '/project', text: 'PROJECT' },
@@ -47,10 +48,17 @@ const Navbar = () => {
                     </li>
                 ))}
                 <li><ModeToggle style={"dark:text-black text-white"} /></li>
+
             </ul>
-            <Link className='hidden lg:block' href={"/contact"}>
-                <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
-            </Link>
+            {pathname !== "/contact" ? (
+                <Link className='hidden lg:block' href={"/contact"}>
+                    <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
+                </Link>
+            ) : (
+                <div className="hidden lg:block">
+                    <ResumeBtn />
+                </div>
+            )}
             <Sidebar navLinks={links} />
         </nav>
     )

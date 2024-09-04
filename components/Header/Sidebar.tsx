@@ -10,6 +10,7 @@ import { RiMenu2Line } from 'react-icons/ri'
 import { NavLinkType } from '../Header/Navbar'
 import { ModeToggle } from '../ModeToggle'
 import { usePathname } from 'next/navigation'
+import ResumeBtn from '../ResumeBtn'
 
 interface SidebarProps {
     navLinks: NavLinkType[];
