@@ -146,6 +146,7 @@ export const ProductCard = ({
           width="850"
           className="object-cover object-left-top absolute h-full w-full inset-0"
           alt={website.title}
+          priority={true}
         />
       </Link>
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
