@@ -5,6 +5,7 @@ import TechArsenalSection from '@/components/Layouts/HomeLayout/TechArsenalSecti
 import Attribution from '@/components/Attribution'
 
 const HomePage = () => {
+  
   return (
     <main>
       <HeroSection />

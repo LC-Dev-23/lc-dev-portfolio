@@ -60,5 +60,6 @@
 }
 html {
   min-width: 320px;
+  min-height: 456;
   scroll-behavior: smooth;
 }

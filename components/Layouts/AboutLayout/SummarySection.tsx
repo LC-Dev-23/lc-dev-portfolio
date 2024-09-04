@@ -120,8 +120,8 @@ const SummarySection = () => {
   return (
     <Section className="py-20 lg:py-40 flex flex-col justify-center items-center">
       <H2 borderStyle="after:w-[150%] lg:after:w-[135%]">Summary</H2>
-      <div className="flex flex-col lg:flex-row  justify-center gap-5 lg:gap-10">
-        <menu className="grid grid-cols-2 lg:flex lg:flex-col lg:flex-wrap gap-2 lg:gap-5 lg:w-[20rem]">
+      <div className="flex flex-col  justify-center gap-5">
+        <menu className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5">
           <li>
             <Button
               variant={"outline"}
@@ -160,7 +160,7 @@ const SummarySection = () => {
           </li>
 
         </menu>
-        <div className="lg:w-[55rem] text-secondaryDarkGray dark:text-accentSoftGray text-base lg:text-lg font-normal font-sans border dark:border-white/[0.2] border-black/[0.2] rounded-xl shadow-xl p-5 lg:p-10">
+        <div className="w-full md:w-[40rem] lg:w-[55rem] text-secondaryDarkGray dark:text-accentSoftGray text-base lg:text-lg font-normal font-sans border dark:border-white/[0.2] border-black/[0.2] rounded-xl shadow-xl p-5 lg:p-10">
           {selectedSection === 'aboutMe' && <AboutMe />}
           {selectedSection === 'experience' && <Experience />}
           {selectedSection === 'education' && <Education />}

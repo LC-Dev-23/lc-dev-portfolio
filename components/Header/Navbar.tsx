@@ -5,9 +5,6 @@ import { ModeToggle } from '../ModeToggle'
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 import Sidebar from './Sidebar';
-import ResumeBtn from '../ResumeBtn';
-
-
 
 export interface NavLinkType {
     href: string;
@@ -50,15 +47,9 @@ const Navbar = () => {
                 <li><ModeToggle style={"dark:text-black text-white"} /></li>
 
             </ul>
-            {pathname !== "/contact" ? (
-                <Link className='hidden lg:block' href={"/contact"}>
-                    <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
-                </Link>
-            ) : (
-                <div className="hidden lg:block">
-                    <ResumeBtn />
-                </div>
-            )}
+            <Link className='hidden lg:block' href={"/contact"}>
+                <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
+            </Link>
             <Sidebar navLinks={links} />
         </nav>
     )
