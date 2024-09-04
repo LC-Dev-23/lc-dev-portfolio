@@ -29,7 +29,7 @@ const InformationSection = () => {
         <div className="flex flex-col md:flex-rows items-center justify-between">
           <div className="text-center">
             <h4 className="font-special text-xl text-primaryWhite font-bold">Looking for a Front-End Specialist?</h4>
-            <p className="font-sans max-w-[35rem] mb-2 italic">If you're seeking a web developer with a focus on front-end technologies, check out my resume to see how my skills align with your needs:</p>
+            <p className="font-sans max-w-[35rem] mb-2 italic">If you&apos;re seeking a web developer with a focus on front-end technologies, check out my resume to see how my skills align with your needs:</p>
           </div>
           <ResumeBtn />
         </div>
