@@ -33,7 +33,7 @@ const Card3D = ({ title, description, cardData }: CardProps) => {
         >
           <ul>
             {cardData.map((listItem) => (
-              <li className="marker:text-primaryRed dark:text-accentSoftGray mb-2 pl-4 list-disc list-inside" key={title} dangerouslySetInnerHTML={{ __html: listItem }}></li>
+              <li className="marker:text-primaryRed dark:text-accentSoftGray mb-2 pl-4 list-disc list-inside" key={listItem} dangerouslySetInnerHTML={{ __html: listItem }}></li>
             ))}
           </ul>
         </CardItem>
