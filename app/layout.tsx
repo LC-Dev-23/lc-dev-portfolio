@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Lord Christian L. Agra - Showcasing Front-End & Web Development Mastery',
+    title: 'Lord Christian Agra - Showcasing Front-End & Web Development Mastery',
     description: 'Explore the portfolio of LC Dev, a skilled web developer with 2 years of experience in crafting responsive, user-friendly websites. Discover his tech arsenal, areas of expertise, and projects.',
     url: 'https://www.lc-dev.site/',
     siteName: 'LC Dev’s Portfolio',
@@ -44,6 +45,12 @@ export const metadata: Metadata = {
     ],
     locale: 'en_PH',
     type: 'website',
+  },
+  icons: {
+    icon: {
+      url: "https://www.lc-dev.site/favicon.ico",
+      type: "image/x-icon",
+    },
   },
 };
 
@@ -66,6 +73,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
