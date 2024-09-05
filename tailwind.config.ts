@@ -27,14 +27,13 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
-        display: ["Montserrat", "sans-serif"],
-        body: ["Roboto", "sans-serif"],
-        special: ["Raleway", "sans-serif"],
+        heading: ["var(--font-monstserrat)"],
+        special: ["var(--font-permanentMarker)"],
+        body: ["var(--nunito)"],
       },
       colors: {
-        primaryWhite: "#FFFFFF",
-        primaryBlack: "#000000",
+        primaryWhite: "#F4F4F3",
+        primaryBlack: "#0B0B0C",
         primaryRed: "#E50914",
         primaryTextWhite: "#FFFFFF",
         primaryTextDarkGray: "#1A1A1A",

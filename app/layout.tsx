@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { monstserrat, roboto, raleway } from "../components/fonts"
+import { monstserrat, permanentMarker, nunito } from "../components/fonts"
 import '../styles/globals.css'
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header/Header";
@@ -60,9 +60,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${monstserrat.className} ${roboto.className} ${raleway.className}`} suppressHydrationWarning>
-
-      <body className={"dark:bg-primaryBlack bg-primaryWhite"}>
+    <html lang="en" className={`${monstserrat.variable} ${permanentMarker.variable} ${nunito.variable}`}>
+      <body className={"dark:bg-primaryBlack bg-primaryWhite"}  suppressHydrationWarning={true}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

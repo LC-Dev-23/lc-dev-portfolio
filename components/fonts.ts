@@ -1,21 +1,22 @@
-import { Montserrat, Roboto, Raleway } from "next/font/google";
+import { Montserrat, Permanent_Marker, Nunito } from "next/font/google";
 
 export const monstserrat = Montserrat({
   weight: ["100", "400", "700"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-monstserrat",
 });
 
-export const roboto = Roboto({
-    weight: ["100", "400", "700"],
-  style: ["normal", "italic"],
+export const permanentMarker = Permanent_Marker({
+  weight: ["400"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--font-permanentMarker",
 });
 
-export const raleway = Raleway({
-    weight: ["100", "400", "700"],
-  style: ["normal", "italic"],
+export const nunito = Nunito({
   subsets: ["latin"],
+  style: ["normal", "italic"],
   display: "swap",
+  variable: "--nunito",
 });
