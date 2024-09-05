@@ -11,7 +11,7 @@ const TechIconBtn = ({ title, srcImg, style }: ArsenalProps) => {
     return (
         <div className="cursor-pointer">
             <Image
-                className={`${style} drop-shadow-logo-shadow h-[3rem] lg:h-[5rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110`}
+                className={`${style} drop-shadow-logo-shadow h-[3rem] lg:h-[4rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110`}
                 src={srcImg}
                 width={700}
                 height={700}

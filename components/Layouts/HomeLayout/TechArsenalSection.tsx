@@ -131,8 +131,8 @@ const TechArsenalSection = () => {
     return (
         <Section className="py-20 flex flex-col justify-center">
             <H2 borderStyle="after:w-[135%] md:after:w-[125%]">Tech Arsenal</H2>
-            <div className="flex flex-col gap-10 w-full">
-                <div className="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-6 gap-5 lg:gap-10 place-content-center lg:p-10 h-auto">
+            <div className="flex flex-col gap-10 justify-center items-center w-full">
+                <div className="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 lg:gap-10 place-content-center lg:p-10 h-auto">
                     {arsenalData.map((arsenalItem, index) => (
                         <TechIconBtn key={index} {...arsenalItem} />
                     ))}
