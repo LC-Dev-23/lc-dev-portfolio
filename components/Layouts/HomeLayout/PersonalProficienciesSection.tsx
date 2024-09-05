@@ -1,6 +1,7 @@
 import H2 from '@/components/H2'
 import Section from '@/components/Section'
 import SoftSkillCarousel from '@/components/SoftSkillCarousel'
+import { Button } from '@/components/ui/moving-border'
 
 const PersonalProficienciesSection = () => {
     return (
