@@ -37,7 +37,7 @@ export default function CarouselImg({ imgData }: ImgType) {
                     <CarouselItem key={image.alt}>
                         <div className="">
                             <Image
-                                className="object-cover drop-shadow-logo-shadow"
+                                className="object-cover"
                                 src={image.src}
                                 width={1000}
                                 height={445}

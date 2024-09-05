@@ -31,7 +31,7 @@ export const websites = [
         title: "MNLeistung GmbH.",
         link: "https://mnleistung-de-nextjs-alpha-test.vercel.app",
         thumbnail:
-            "/images/project-assets/websites/mnl-de-speedtest.png",
+            "/images/project-assets/websites/mnl-de.jpg",
     },
     {
         title: "MNLeistung Inc. Services",
@@ -59,7 +59,7 @@ export const websites = [
             "/images/project-assets/websites/1university.jpg",
     },
     {
-        title: "MNLeistung GmbH",
+        title: "MNLeistung DE",
         link: "https://mnleistung-de-nextjs-alpha-test.vercel.app/",
         thumbnail:
             "/images/project-assets/websites/mnl-de.jpg",
@@ -93,7 +93,7 @@ export const websites = [
 
 const HeroAnimationSection = () => {
     return (
-        <Section className="py-20 lg:pb-0 lg:pt-24">
+        <Section className="py-20 lg:pb-0 lg:pt-20">
             <HeroParallax websites={websites} />
         </Section>
     )

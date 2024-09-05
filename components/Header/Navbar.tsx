@@ -36,7 +36,7 @@ const Navbar = () => {
                     priority={true}
                 />
             </Link>
-            <ul className={`text-accentSoftGray font-semibold gap-10 items-center hidden lg:flex`}>
+            <ul className={`dark:text-primaryBlack/80 text-primaryWhite/80 font-semibold gap-10 items-center hidden lg:flex`}>
                 {links.map(({ href, text, className }) => (
                     <li key={href} className={`${pathname === href ? 'dark:text-primaryBlack text-primaryWhite font-bold scale-110 relative after:absolute after:block after:w-full after:h-0.5 after:bg-primaryRed after:bottom-[-.5rem] after:left-0 after:transition-transform after:duration-300 hover:after:transform hover:after:scale-x-100' : 'hover:text-accentBrightRed hover:scale-110'} ${className}`}>
                         <Link href={href} >
@@ -45,10 +45,9 @@ const Navbar = () => {
                     </li>
                 ))}
                 <li><ModeToggle style={"dark:text-black text-white"} /></li>
-
             </ul>
             <Link className='hidden lg:block' href={"/contact"}>
-                <Button className={`font-semibold font-display rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 shadow-2xl border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite border-primaryRed dark:border-primaryRed" : "dark:text-accentSoftGray text-accentSoftGray hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
+                <Button className={`dark:hover:bg-transparent dark:bg-primaryWhite bg-primaryBlack font-semibold font-heading rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite dark:text-primaryBlack border-primaryRed dark:border-primaryRed" : "dark:text-primaryBlack/80 text-primaryWhite/80 hover:text-accentBrightRed dark:hover:text-accentBrightRed"}`}>CONTACT</Button>
             </Link>
             <Sidebar navLinks={links} />
         </nav>

@@ -37,7 +37,7 @@ const AreasofExpertiseSection = () => {
     return (
         <Section className="py-20 lg:py-40  flex flex-col justify-center">
             <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Areas of Expertise</H2>
-            <div className="flex flex-col lg:flex-row  gap-10 justify-center items-center basis-full md:basis-1/2 lg:basis-1/3">
+            <div className="flex flex-wrap justify-center gap-10">
                 {cardData.map((card) => (
                     <Card3D key={card.title} title={card.title} description={card.description} cardData={card.listItems} />
                 ))}

@@ -11,7 +11,7 @@ const TechIconBtn = ({ title, srcImg, style }: ArsenalProps) => {
     return (
         <div className="cursor-pointer">
             <Image
-                className={`${style} drop-shadow-logo-shadow h-[3rem] lg:h-[4rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110`}
+                className={`${style} dark:drop-shadow-none drop-shadow-md h-[3rem] lg:h-[4rem] w-full object-contain rounded-xl group-hover/card:shadow-xl hover:scale-110`}
                 src={srcImg}
                 width={700}
                 height={700}
@@ -19,7 +19,7 @@ const TechIconBtn = ({ title, srcImg, style }: ArsenalProps) => {
                 priority={false}
                 loading={"lazy"}
             />
-            <h3 className="text-center pt-5 font-sans text-xs md:text-sm">{title}</h3>
+            <h3 className="text-center pt-5 font-body text-xs md:text-sm">{title}</h3>
         </div>
     )
 }

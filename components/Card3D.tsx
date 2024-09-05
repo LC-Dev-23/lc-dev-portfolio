@@ -10,26 +10,26 @@ interface CardProps {
 
 const Card3D = ({ title, description, cardData }: CardProps) => {
   return (
-    <CardContainer className="w-full">
-      <CardBody className="bg-transparent border dark:border-white/[0.2] border-black/[0.2] rounded-xl relative dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
+    <CardContainer className="w-full lg:w-[26rem]">
+      <CardBody className="bg-transparent border dark:border-white/[0.2] border-black/[0.2] rounded-xl relative dark:shadow-none shadow-md dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
         <CardItem
           as="h3"
           translateZ="60"
-          className="text-md md:text-xl font-bold text-primaryBlack dark:text-secondaryLightGray mb-1 font-display"
+          className="text-md md:text-xl font-heading font-bold text-primaryBlack dark:text-secondaryLightGray mb-1"
         >
           {title}
         </CardItem>
         <CardItem
           as="h4"
           translateZ="80"
-          className="text-sm md:text-base text-primaryBlack dark:text-accentSoftGray mb-4 font-special italic"
+          className="text-sm md:text-base font-body italic text-primaryBlack dark:text-accentSoftGray mb-4"
         >
           {description}
         </CardItem>
         <CardItem
           as="div"
           translateZ="100"
-          className="text-sm md:text-base text-primaryBlack mt-2 dark:text-secondaryLightGray font-sans"
+          className="text-sm md:text-base font-body text-primaryBlack dark:text-secondaryLightGray mt-2"
         >
           <ul>
             {cardData.map((listItem) => (

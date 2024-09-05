@@ -33,7 +33,7 @@ export function Button({
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  h-12 w-32 p-[1px] overflow-hidden",
+        "bg-transparent relative text-xl  h-12 w-32 p-[.1rem] overflow-hidden",
         containerClassName
       )}
       style={{
@@ -43,7 +43,7 @@ export function Button({
     >
       <div
         className="absolute inset-0"
-        style={{ borderRadius: `calc(${borderRadius} * 0.96)` }}
+        style={{ borderRadius: `calc(${borderRadius} * 0.43)` }}
       >
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <div
@@ -57,11 +57,11 @@ export function Button({
 
       <div
         className={cn(
-          "relative bg-slate-900/[0.8] border border-slate-800 backdrop-blur-xl text-white flex items-center justify-center w-full h-full text-sm antialiased",
+          "relative text-white flex items-center justify-center w-full h-full text-sm antialiased",
           className
         )}
         style={{
-          borderRadius: `calc(${borderRadius} * 0.96)`,
+          borderRadius: `calc(${borderRadius} * 0.90)`,
         }}
       >
         {children}
