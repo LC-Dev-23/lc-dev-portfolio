@@ -27,7 +27,7 @@ const Sidebar = ({ navLinks }: SidebarProps) => {
     return (
         <Sheet open={isOpen} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button variant="link" size={'icon'} className='h-10 w-10 lg:hidden dark:text-primaryBlack text-primaryWhite text-4xl bg-transparent'>{!isOpen && <RiMenu2Line />}</Button>
+                <Button aria-label="Hamburger Menu" variant="link" size={'icon'} className='h-10 w-10 lg:hidden dark:text-primaryBlack text-primaryWhite text-4xl bg-transparent'>{!isOpen && <RiMenu2Line />}</Button>
             </SheetTrigger>
             <SheetContent>
                 <nav>
