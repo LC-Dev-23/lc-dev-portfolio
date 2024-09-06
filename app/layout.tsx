@@ -60,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${monstserrat.variable} ${permanentMarker.variable} ${nunito.variable}`}>
-      <body className={"dark:bg-primaryBlack bg-primaryWhite"}  suppressHydrationWarning={true}>
+    <html lang="en" className={`${monstserrat.variable} ${permanentMarker.variable} ${nunito.variable}`} suppressHydrationWarning={true}>
+      <body className={"dark:bg-primaryBlack bg-primaryWhite"}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
