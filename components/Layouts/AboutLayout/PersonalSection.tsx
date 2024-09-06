@@ -36,7 +36,7 @@ const PersonalSection = () => {
           </p>
           <br />
           <p>
-            <span className="text-primaryBlack dark:text-primaryWhite font-bold">Outside of coding</span>, LC enjoys <span className="text-primaryBlack dark:text-primaryWhite font-bold">reading</span> Manhwa and Manhua and <span className="text-primaryBlack dark:text-primaryWhite font-bold">Outside of coding</span>, LC enjoys <span className="text-primaryBlack dark:text-primaryWhite font-bold">watching</span> anime, particularly stories about <span className="text-primaryBlack dark:text-primaryWhite font-bold">underdogs who become heroes</span>.
+            <span className="text-primaryBlack dark:text-primaryWhite font-bold">Outside of coding</span>, LC enjoys <span className="text-primaryBlack dark:text-primaryWhite font-bold">reading</span> Manhwa and Manhua and <span className="text-primaryBlack dark:text-primaryWhite font-bold">watching</span> anime, particularly stories about <span className="text-primaryBlack dark:text-primaryWhite font-bold">underdogs who become heroes</span>.
             He relates to these characters, as he started with little experience and is <span className="text-primaryBlack dark:text-primaryWhite font-bold">driven to continually improve and grow</span>.
           </p>
         </article>

@@ -99,10 +99,13 @@ export const Skills = () => {
     <div className="h-[20rem] px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-heading dark:text-primaryWhite text-primaryBlack mb-4">My Skills</h3>
       <ul className="flex flex-col gap-2 pl-4 list-disc list-inside font-semibold dark:text-primaryWhite text-primaryBlack">
-        <li>Strong understanding of HTML, CSS, and JavaScript.</li>
-        <li>Skilled in building responsive, cross-browser compatible websites.</li>
-        <li>Ability to quickly learn and adapt to new technologies and frameworks.</li>
         <li>Creative approach to problemsolving and resourcefulness in finding solutions.</li>
+        <li>Proficient in front-end libraries and frameworks such as React and Next Js</li>
+        <li>Ability to quickly learn and adapt to new technologies and frameworks.</li>
+        <li>Skilled in building responsive, cross-browser compatible websites.</li>
+        <li>Understanding of web performance optimization techniques.</li>
+        <li>Experienced with Git and GitHub/GitLab for version control.</li>
+        <li>Strong understanding of HTML, CSS, and JavaScript.</li>
       </ul>
     </div>
   )
