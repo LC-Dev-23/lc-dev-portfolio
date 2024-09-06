@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <>
       <Section className="flex flex-col-reverse items-center justify-end lg:flex-row lg:justify-center md:gap-5 lg:gap-20 pt-32 pb-20 md:pt-40 lg:py-0 Z-10">
-        <div className="absolute h-screen w-full min-h-[49rem] -z-20 dark:bg-grid-white/[0.1] bg-grid-black/[0.1] flex items-center justify-center" />
-        <div className="absolute h-screen w-full min-h-[49rem] -z-10 pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="absolute h-screen w-full min-h-[49rem] -z-20 dark:bg-grid-white/[0.1] bg-grid-black/[0.1]" />
+        <div className="absolute h-screen w-full min-h-[49rem] -z-10 pointer-events-none inset-0 dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         <article className='lg:max-w-[30rem] xl:max-w-[41rem] font-normal font-body text-base lg:text-lg'>
           <p className="text-lg lg:text-lg font-bold">Hi, Im</p>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading dark:drop-shadow-none drop-shadow-md">Lord Christian Agra</h1>
