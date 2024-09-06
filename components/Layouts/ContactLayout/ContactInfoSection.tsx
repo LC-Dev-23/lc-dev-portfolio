@@ -4,14 +4,22 @@ import Link from 'next/link'
 import { FaEnvelope, FaFacebookF, FaFacebookMessenger, FaGithubAlt, FaGitlab, FaLaptopCode, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaUserTie } from 'react-icons/fa'
 import ReusableTooltip from '@/components/ReusableTooltip'
 import ResumeBtn from '@/components/ResumeBtn'
+import { SparklesCore } from '@/components/ui/sparkles'
 
 
 
 const InformationSection = () => {
   return (
     <Section className="py-20 lg:py-40 flex flex-col justify-center items-center">
+       <SparklesCore
+          id="tsparticlesfullpage"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-[115vh] absolute -z-10"
+        />
       <H2 borderStyle="after:w-[140%] md:after:w-[130%]">Contact Me</H2>
-      <div className="flex flex-col justify-center text-primaryBlack dark:text-accentSoftGray w-full lg:max-w-[50rem] border dark:border-white/[0.2] border-black/[0.2] shadow-md rounded-xl p-5 lg:p-10">
+      <div className="flex flex-col justify-center text-primaryBlack/80 dark:text-primaryWhite/80 dark:bg-primaryBlack bg-primaryWhite w-full lg:max-w-[50rem] border dark:border-white/[0.2] border-black/[0.2] shadow-md rounded-xl p-5 lg:p-10">
         <h1 className="text-center text-xl md:text-3xl font-heading font-bold dark:text-primaryWhite">Let&apos;s Build Something Great Together</h1>
         <h3 className="text-center text-base md:text-lg font-heading italic">Feel free to contact me for any project inquiries or collaboration opportunities.</h3>
         <ul className="grid grid-col-1 md:grid-cols-2 gap-2 text-sm md:text-lg font-body py-5 md:py-10 mx-auto">
