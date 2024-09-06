@@ -30,7 +30,7 @@ const Sidebar = ({ navLinks }: SidebarProps) => {
             </SheetTrigger>
             <SheetContent>
                 <nav>
-                    <ul className="flex flex-col items-center gap-5 justify-center min-h-[25rem] dark:text-primaryWhite/80 text-primaryBlack/80 font-heading font-semibold">
+                    <ul className="flex flex-col items-center gap-5 md:gap-10 justify-center min-h-[30rem] md:min-h-[35rem] dark:text-primaryWhite/80 text-primaryBlack/80 font-heading font-semibold">
                         {navLinks.map((link) => (
                             <li key={link.text} className={`${pathname === link.href ? 'text-primaryBlack dark:text-primaryWhite font-bold scale-110 relative after:absolute after:block after:w-full after:h-0.5 after:bg-primaryRed after:bottom-[-.5rem] after:left-0 after:transition-transform after:duration-300 hover:after:transform hover:after:scale-x-100' : 'hover:text-accentBrightRed hover:scale-110'}`}><Link onClick={handleClick} href={link.href} >{link.text}</Link></li>
                         ))}
