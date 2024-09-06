@@ -107,7 +107,7 @@ const SoftSkillCarousel = () => {
             <CarouselContent>
                 {cardData.map((personality, index) => (
                     <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <Card >
+                        <Card className="dark:bg-primaryBlack bg-primaryWhite">
                             <CardHeader>
                                 <CardTitle>{personality.title}</CardTitle>
                             </CardHeader>

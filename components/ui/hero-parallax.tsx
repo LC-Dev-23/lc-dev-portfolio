@@ -57,7 +57,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="min-h-[110rem] md:min-h-[135rem] lg:min-h-[140rem] overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="min-h-[115rem] md:min-h-[135rem] lg:min-h-[140rem] overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -67,7 +67,7 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className="py-80 lg:py-0"
+        className="py-[25rem] lg:py-0"
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-10 lg:mb-20">
           {firstRow.map((website) => (
@@ -78,7 +78,7 @@ export const HeroParallax = ({
             />
           ))}
         </motion.div>
-        <motion.div className="flex flex-row  mb-10 lg:mb-20 space-x-20 ">
+        <motion.div className="flex flex-row  mb-10 lg:mb-20 space-x-20">
           {secondRow.map((website) => (
             <ProductCard
               website={website}

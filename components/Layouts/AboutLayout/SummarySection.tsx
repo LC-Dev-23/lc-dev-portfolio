@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export const AboutMe = () => {
   return (
-    <div className="flex flex-col h-[20rem] overflow-y-scroll px-2 md:px-5">
+    <div className="flex flex-col h-[20rem] overflow-y-auto overflow-hidden px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-heading dark:text-primaryWhite text-primaryBlack mb-2">About Me</h3>
       <p>I&apos;ve been working as a web developer for two years, and I enjoy it a lot. The field is always evolving, which keeps me motivated to learn and tackle new problems. My curiosity and interest in technology drive my enthusiasm for development. I find it rewarding to turn an idea into a functional, user-friendly website.</p>
       <div>
@@ -26,7 +26,7 @@ export const AboutMe = () => {
 }
 export const Experience = () => {
   return (
-    <div className="flex flex-col h-[20rem] overflow-y-scroll px-2 md:px-5">
+    <div className="flex flex-col h-[20rem] overflow-y-auto overflow-hidden px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-heading dark:text-primaryWhite text-primaryBlack mb-4">My Experience</h3>
       <h4 className="flex flex-col md:flex-row md:justify-between"><span className="font-heading font-bold dark:text-primaryWhite text-primaryBlack">Web Developer / Mobile Developer</span> <span>10/2022 - 07/2024</span></h4>
       <p className="flex flex-col mt-2 md:mt-0 md:flex-row md:justify-between font-semibold"><span>MNLeistung Inc.</span> <span>Cainta, Rizal, Philippines</span></p>
@@ -74,7 +74,7 @@ export const Experience = () => {
 }
 export const Education = () => {
   return (
-    <div className="flex flex-col h-[20rem] overflow-y-scroll px-2 md:px-5">
+    <div className="flex flex-col h-[20rem] overflow-y-auto overflow-hidden px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold font-heading dark:text-primaryWhite text-primaryBlack mb-4">My Education</h3>
       <h4 className="flex flex-col md:flex-row md:justify-between"><span className="dark:text-primaryWhite text-primaryBlack font-bold font-heading text-base md:text-md lg:text-xl">Bachelor of Science in Information Technology</span> <span>2018 - 2022</span></h4>
       <p className="flex flex-col mt-2 md:mt-0 md:flex-row md:justify-between font-medium"><span>Philippine Best Training System Colleges</span> <span>Binangonan, Rizal, Philippines</span></p>
@@ -96,7 +96,7 @@ export const Education = () => {
 }
 export const Skills = () => {
   return (
-    <div className="h-[20rem] px-2 md:px-5">
+    <div className="h-[20rem] overflow-y-auto overflow-hidden px-2 md:px-5">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-bold font-heading dark:text-primaryWhite text-primaryBlack mb-4">My Skills</h3>
       <ul className="flex flex-col gap-2 pl-4 list-disc list-inside font-semibold dark:text-primaryWhite text-primaryBlack">
         <li>Creative approach to problemsolving and resourcefulness in finding solutions.</li>
