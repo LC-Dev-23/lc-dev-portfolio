@@ -31,6 +31,10 @@ const config = {
         special: ["var(--font-permanentMarker)"],
         body: ["var(--nunito)"],
       },
+      backgroundImage: {
+        'grad-black': 'radial-gradient(ellipse at 50% 50%, #0B0B0C 40%, #000000 100%)',
+        'grad-white': 'radial-gradient(ellipse at 50% 50%, #F4F4F3 40%, #FFFFFF 100%)',
+      },
       colors: {
         primaryWhite: "#F4F4F3",
         primaryBlack: "#0B0B0C",

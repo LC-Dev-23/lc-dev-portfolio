@@ -7,7 +7,7 @@ import Attribution from '@/components/Attribution'
 const HomePage = () => {
   
   return (
-    <main className="relative">
+    <main>
       <HeroSection />
       <AreasofExpertiseSection />
       <PersonalProficienciesSection />

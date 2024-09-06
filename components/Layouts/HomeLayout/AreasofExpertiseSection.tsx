@@ -35,7 +35,7 @@ export const cardData = [
 const AreasofExpertiseSection = () => {
 
     return (
-        <Section className="py-20 lg:py-40  flex flex-col justify-center">
+        <Section className="py-20 lg:py-40  flex flex-col justify-center dark:bg-grad-black bg-grad-white bg-cover">
             <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Areas of Expertise</H2>
             <div className="flex flex-wrap justify-center gap-10">
                 {cardData.map((card) => (
