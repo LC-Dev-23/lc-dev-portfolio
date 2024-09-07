@@ -104,7 +104,7 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <article className='lg:max-w-[30rem] xl:max-w-[45rem] text-center mx-auto mt-20 lg:mt-40'>
-      <h1 className="text-2xl md:text-3xl font-bold font-heading py-10"><span className="font-heading font-bold relative after:absolute after:block after:w-[130%] after:h-16 after:bg-transparent shadow-none after:shadow-md after:border-4 after:border-primaryRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12">My Projects</span></h1>
+      <h1 className="text-2xl md:text-3xl font-bold font-heading py-10"><span className="font-heading font-bold relative after:absolute after:block after:w-[130%] after:h-16 after:bg-transparent shadow-none after:shadow-md after:border-4 after:border-accentDarkRed dark:after:border-accentLightRed after:bottom-[-1rem] after:-z-10 after:-left-6 after:transition-transform after:duration-300 hover:after:transform after:skew-x-12">My Projects</span></h1>
       <p className="text-base lg:text-lg font-normal font-body px-[10%]">
         Take a look at some of the projects I&apos;ve worked on. Each one shows my ability to build practical and easy-to-use websites,
         covering everything from simple front-end tasks to more complex full-stack applications.

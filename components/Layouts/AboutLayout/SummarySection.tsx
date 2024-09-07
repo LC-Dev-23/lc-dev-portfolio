@@ -121,6 +121,8 @@ const SummarySection = () => {
   };
   return (
     <Section className="py-20 lg:py-40 flex flex-col justify-center items-center">
+      <div className="absolute w-full h-full top-0 left-0 object-cover -z-20 dark:bg-dot-white/[0.3] bg-dot-black/[0.3]" />
+      <div className="absolute w-full h-full top-0 left-0 object-cover -z-10 pointer-events-none inset-0 dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       <H2 borderStyle="after:w-[150%] lg:after:w-[135%]">Summary</H2>
       <div className="flex flex-col  justify-center gap-5">
         <menu className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-5">
@@ -162,7 +164,7 @@ const SummarySection = () => {
           </li>
 
         </menu>
-        <div className="w-full md:w-[40rem] lg:w-[55rem] marker:text-primaryRed dark:text-primaryWhite/80 text-primaryBlack/80 text-sm mg:text-base lg:text-lg font-normal font-body border dark:border-white/[0.2] border-black/[0.2] dark:shadow-none rounded-xl shadow-md p-5 lg:p-10">
+        <div className="w-full md:w-[40rem] lg:w-[55rem] dark:bg-primaryBlack bg-primaryWhite marker:text-primaryRed dark:text-primaryWhite/80 text-primaryBlack/80 text-sm mg:text-base lg:text-lg font-normal font-body border dark:border-white/[0.2] border-black/[0.2] dark:shadow-none rounded-xl shadow-md p-5 lg:p-10">
           {selectedSection === 'aboutMe' && <AboutMe />}
           {selectedSection === 'experience' && <Experience />}
           {selectedSection === 'education' && <Education />}

@@ -102,7 +102,7 @@ const SoftSkillCarousel = () => {
             opts={{
                 align: "start",
             }}
-            className="w-full px-2 md:px-5"
+            className="w-full px-2 md:px-5 mt-5"
         >
             <CarouselContent>
                 {cardData.map((personality, index) => (
