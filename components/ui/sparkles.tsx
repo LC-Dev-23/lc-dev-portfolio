@@ -128,7 +128,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 },
               },
               color: {
-                value: `${theme === 'dark' ? 'FFFFFF' : 'E50914'}`,
+                value: `${theme === 'dark' ? 'FFFFFF' : '000000'}`,
                 animation: {
                   h: {
                     count: 0,
