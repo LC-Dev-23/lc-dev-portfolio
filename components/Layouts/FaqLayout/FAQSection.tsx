@@ -9,7 +9,7 @@ import {
 
 const FAQSection = () => {
     return (
-        <Section className="py-20 lg:py-40 flex flex-col justify-center">
+        <Section className="py-20 lg:py-40 flex flex-col justify-center items-center dark:bg-grad-black bg-grad-white">
             <H2 borderStyle="after:w-[200%] lg:after:w-[180%]">FAQ</H2>
             <Accordion type="single" collapsible className="w-full md:w-[80%] mx-auto">
                 <AccordionItem value="item-1">

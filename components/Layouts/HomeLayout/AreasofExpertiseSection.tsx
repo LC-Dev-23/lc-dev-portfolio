@@ -21,15 +21,15 @@ export const cardData = [
             `<span class="dark:text-primaryWhite text-primaryBlack font-bold">User Interface Implementation:</span> Converting UI/UX designs into functional websites.`,
         ],
     },
-    {
-        title: 'Mobile Development',
-        description: 'Developing cross-platform apps with a focus on user-friendly interfaces.',
-        listItems: [
-            `<span class="dark:text-primaryWhite text-primaryBlack font-bold">PWA:</span> Web apps that work offline, load quickly, and feel like native apps in a browser.`,
-            `<span class="dark:text-primaryWhite text-primaryBlack font-bold">Ionic React:</span> Creating hybrid mobile applications based on design specs.`,
-            `<span class="dark:text-primaryWhite text-primaryBlack font-bold">Mobile Optimization:</span> Ensuring apps perform well on both iOS and Android.`,
-        ],
-    },
+    // {
+    //     title: 'Mobile Development',
+    //     description: 'Developing cross-platform apps with a focus on user-friendly interfaces.',
+    //     listItems: [
+    //         `<span class="dark:text-primaryWhite text-primaryBlack font-bold">PWA:</span> Web apps that work offline, load quickly, and feel like native apps in a browser.`,
+    //         `<span class="dark:text-primaryWhite text-primaryBlack font-bold">Ionic React:</span> Creating hybrid mobile applications based on design specs.`,
+    //         `<span class="dark:text-primaryWhite text-primaryBlack font-bold">Mobile Optimization:</span> Ensuring apps perform well on both iOS and Android.`,
+    //     ],
+    // },
 ];
 
 const AreasofExpertiseSection = () => {
@@ -37,7 +37,7 @@ const AreasofExpertiseSection = () => {
     return (
         <Section className="py-20 lg:py-40  flex flex-col justify-center dark:bg-grad-black bg-grad-white bg-cover">
             <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Areas of Expertise</H2>
-            <div className="flex flex-wrap justify-center gap-10">
+            <div className="flex flex-wrap justify-center gap-10 mt-5">
                 {cardData.map((card) => (
                     <Card3D key={card.title} title={card.title} description={card.description} cardData={card.listItems} />
                 ))}

@@ -32,8 +32,10 @@ const config = {
         body: ["var(--nunito)"],
       },
       backgroundImage: {
-        'grad-black': 'radial-gradient(ellipse at 50% 50%, #0B0B0C 40%, #000000 100%)',
-        'grad-white': 'radial-gradient(ellipse at 50% 50%, #F4F4F3 40%, #FFFFFF 100%)',
+        "grad-black":
+          "radial-gradient(ellipse at 50% 50%, #0B0B0C 40%, #000000 100%)",
+        "grad-white":
+          "radial-gradient(ellipse at 50% 50%, #F4F4F3 40%, #FFFFFF 100%)",
       },
       colors: {
         primaryWhite: "#F4F4F3",
@@ -44,7 +46,8 @@ const config = {
         secondaryDarkGray: "#1A1A1A",
         secondaryLightGray: "#F5F5F5",
         accentSoftGray: "#B3B3B3",
-        accentBrightRed: "#FF0000",
+        accentLightRed: "#FF0000",
+        accentDarkRed: "#DB0000",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
