@@ -61,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${monstserrat.variable} ${permanentMarker.variable} ${nunito.variable}`} suppressHydrationWarning={true}>
-      <body className={"dark:bg-primaryBlack bg-primaryWhite"}>
+      <body className={"dark:bg-primaryBlack bg-primaryWhite min-w-[20rem] min-h-[28.5] scroll-smooth"}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
