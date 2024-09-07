@@ -17,8 +17,8 @@ const AboutPage = () => {
   return (
     <main>
       <IntroductionSection />
-      <EducationalSection />
       <CareerSection />
+      <EducationalSection />
       <PersonalSection />
       <SummarySection />
     </main>
