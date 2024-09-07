@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card3D = ({ title, description, cardData }: CardProps) => {
   return (
-    <CardContainer className="w-full lg:w-[26rem]">
+    <CardContainer className="w-full">
       <CardBody className="bg-transparent border dark:border-white/[0.2] border-black/[0.2] rounded-xl relative dark:shadow-none shadow-md dark:hover:shadow-2xl dark:hover:shadow-primaryRed/[0.5] hover:shadow-2xl hover:shadow-primaryBlack/[0.5] p-6">
         <CardItem
           as="h3"
@@ -22,7 +22,7 @@ const Card3D = ({ title, description, cardData }: CardProps) => {
         <CardItem
           as="h4"
           translateZ="80"
-          className="text-sm md:text-base font-body italic text-primaryBlack dark:text-accentSoftGray mb-4"
+          className="text-sm md:text-base font-body italic text-primaryBlack/80 dark:text-primaryWhite/80 mb-4"
         >
           {description}
         </CardItem>
