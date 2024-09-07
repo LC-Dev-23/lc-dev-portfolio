@@ -93,7 +93,7 @@ export const websites = [
 
 const HeroAnimationSection = () => {
     return (
-        <Section className="pt-20 px-0">
+        <Section className="pt-20 !px-0">
             <HeroParallax websites={websites} />
         </Section>
     )
