@@ -9,7 +9,7 @@ const HeroSection = () => {
       <Section className="flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-center md:gap-5 lg:gap-20 pb-20 lg:py-40">
         <div className="absolute w-full h-full top-0 left-0 object-cover -z-20 dark:bg-grid-white/[0.1] bg-grid-black/[0.1]" />
         <div className="absolute w-full h-full top-0 left-0 object-cover -z-10 pointer-events-none inset-0 dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-        <article className='lg:max-w-[30rem] xl:max-w-[41rem] font-normal font-body text-base lg:text-lg'>
+        <article className='lg:max-w-[30rem] xl:max-w-[41rem] font-normal font-body text-base lg:text-lg dark:text-primaryWhite text-primaryBlack'>
           <p className="text-lg lg:text-lg font-bold">Hi, Im</p>
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-heading dark:drop-shadow-none drop-shadow-md">Lord Christian Agra</h1>
           <h2 className="text-xl md:text-2xl pb-5 font-special dark:text-accentLightRed text-accentDarkRed dark:drop-shadow-none drop-shadow-md">Web Developer</h2>
