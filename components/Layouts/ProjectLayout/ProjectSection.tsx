@@ -49,7 +49,7 @@ export const data = [
                     the website&apos;s performance, providing a smoother and faster user experience from the moment users visit the site.
                 </p>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -86,7 +86,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="Laravel" srcImg="/images/home-assets/tech-logo/laravel-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="jQuery" srcImg="/images/home-assets/tech-logo/jquery-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -173,7 +173,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -218,7 +218,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -250,7 +250,7 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    With no ongoing projects at the time, I chose to help the mobile team develop a Patient's Portal app.
+                    With no ongoing projects at the time, I chose to help the mobile team develop a Patient&apos;s Portal app.
                     This opportunity allowed me to stay engaged, sharpen my skills, and contribute to an important aspect of our company&apos;s offerings.
                 </p>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -312,7 +312,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="React Js" srcImg="/images/home-assets/tech-logo/react-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="Ionic" srcImg="/images/home-assets/tech-logo/ionic-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -368,7 +368,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -405,7 +405,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
@@ -424,7 +424,7 @@ export const data = [
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
                     After completing all my ongoing projects, my final task was to implement all sales and marketing suggestions into the websites. This involved adding Google Ads,
-                    conversion tracking, booking systems, and call-to-action (CTA) elements, as well as ensuring form submissions were routed to the company's CRM via API.
+                    conversion tracking, booking systems, and call-to-action (CTA) elements, as well as ensuring form submissions were routed to the company&apos;s CRM via API.
                     I also created dedicated pages for each of the company&apos;s SaaS products, highlighting their unique features, optimizing them for SEO,
                     and making them searchable on Google. Finally, I compiled detailed documentation for all the websites I managed, outlining the work completed and the integrations implemented.
                 </p>
@@ -463,7 +463,7 @@ export const data = [
                     />
                 </div>
                 <div className="my-8 flex-row">
-                    <h3 className='font-bold'>Technology used:</h3>
+                    <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
                         <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
                         <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
