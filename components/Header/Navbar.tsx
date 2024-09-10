@@ -47,7 +47,7 @@ const Navbar = () => {
                 <li><ModeToggle style={"dark:text-black text-white"} /></li>
             </ul>
             <Link className='hidden lg:block' href={"/contact"}>
-                <Button className={`dark:hover:bg-transparent dark:bg-primaryWhite bg-primaryBlack font-semibold font-heading rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite dark:text-primaryBlack border-accentDarkRed dark:border-accentLightRed" : "dark:text-primaryBlack/80 text-primaryWhite/80 hover:text-accentLightRed dark:hover:text-accentLightRed"}`}>CONTACT</Button>
+                <Button className={`dark:hover:bg-transparent dark:bg-primaryWhite bg-primaryBlack font-semibold font-heading rounded-none border-[3px] hover:border-accentRed hover:bg-inherit px-5 py-2 border-primaryWhite dark:border-primaryBlack ${"/contact" === pathname ? "text-primaryWhite dark:text-primaryBlack border-accentLightRed dark:border-accentDarkRed" : "dark:text-primaryBlack/80 text-primaryWhite/80 hover:text-accentLightRed dark:hover:text-accentLightRed"}`}>CONTACT</Button>
             </Link>
             <Sidebar navLinks={links} />
         </nav>
