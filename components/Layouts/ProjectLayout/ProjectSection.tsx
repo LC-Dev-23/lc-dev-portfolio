@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Section from '@/components/Section'
 import H2 from '@/components/H2'
 import { Timeline } from '@/components/ui/timeline'
+import TechIconBtn from '@/components/TechIconBtn';
 
 
 export const data = [
@@ -10,7 +11,7 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    I started my career as a web developer at MNLeistung Inc., where I was responsible for developing and maintaining the company&apos;s and clients' websites.
+                    I started my career as a web developer at MNLeistung Inc., where I was responsible for developing and maintaining the company&apos;s and clients&apos; websites.
                     As a fresh graduate, I was familiar with basic technologies like HTML, CSS, JavaScript, PHP, MySQL, Bootstrap, and cPanel hosting on free providers.
                     Within a few weeks, I began learning Laravel so I could assist with the hospital system development when I didn&apos;t have tasks related to the websites I handled.
                 </p>
@@ -27,9 +28,9 @@ export const data = [
                             alt="MNLeistung home before"
                             width={780}
                             height={403}
-                            className="object-contain h-auto w-full"
+                            className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                         />
-                        <p>Before</p>
+                        <p className="mt-2">Before</p>
                     </div>
                     <div>
                         <Image
@@ -37,17 +38,26 @@ export const data = [
                             alt="MNLeistung home after"
                             width={780}
                             height={403}
-                            className="object-contain h-auto w-full"
+                            className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                         />
-                        <p>After</p>
+                        <p className="mt-2">After</p>
                     </div>
                 </div>
-                <div className="hidden lg:flex justify-around">
-
-
+                <p className="mt-5">
+                    <span className="font-bold">Issue Solved:</span> I resolved the issue of slow and occasionally infinite loading of
+                    the preloader during the initial load by removing unnecessary animations. This optimization significantly enhanced
+                    the website&apos;s performance, providing a smoother and faster user experience from the moment users visit the site.
+                </p>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="JavaScript" srcImg="/images/home-assets/tech-logo/js-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Bootstrap" srcImg="/images/home-assets/tech-logo/bootstrap-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Cpanel" srcImg="/images/home-assets/tech-logo/cpanel-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
-                <p className="mt-5">Issue Solved: I addressed the issue of slow and sometimes infinite loading of the preloader during the initial load by removing unnecessary animations.
-                    This optimization significantly improved the website’s performance, ensuring a smoother and faster user experience right from the start.</p>
             </div>
         ),
     },
@@ -56,26 +66,35 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    I successfully migrated and deployed our company website using Laravel,
-                    introducing new features like dynamic job postings. Throughout this process,
-                    I learned valuable skills, such as integrating third-party APIs and using
-                    Git for version control with repositories like GitLab.
+                    I successfully migrated and deployed our company website to Laravel, adding new features like dynamic job postings.
+                    During this process, I learned how to integrate third-party APIs and use Git for version control with GitLab.
                 </p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <Image
                         src="/images/project-assets/timeline/careers-before.jpg"
                         alt="Careers hero section"
                         width={780}
                         height={405}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/career-joblist.jpg"
                         alt="Careers job listing section"
                         width={780}
                         height={405}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="Laravel" srcImg="/images/home-assets/tech-logo/laravel-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="jQuery" srcImg="/images/home-assets/tech-logo/jquery-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Sass" srcImg="/images/home-assets/tech-logo/sass-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Bootstrap" srcImg="/images/home-assets/tech-logo/bootstrap-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Cpanel" srcImg="/images/home-assets/tech-logo/cpanel-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="GitLab" srcImg="/images/home-assets/tech-logo/gitlab-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -96,7 +115,7 @@ export const data = [
                         alt="Careers job listing section"
                         width={1000}
                         height={667}
-                        className="object-contain h-auto w-[80%] mx-auto"
+                        className="object-contain h-auto w-full lg:w-[80%] mx-auto lg:hover:scale-125 transition-transform duration-300"
                     />
                 </div>
             </div>
@@ -107,50 +126,62 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    A few months later, I was tasked with redesigning the company website to make it unique and appealing to potential developer applicants.
-                    As the sole developer on the project, I collaborated closely with a Graphic Designer to bring the vision to life. To achieve a modern and
-                    efficient development process, I chose to use React.js with Vite.
+                    A few months later, I was assigned to redesign the company website to make it unique and appealing to
+                    potential developer applicants. As the only developer on the project, I worked closely with a Graphic
+                    Designer to bring the design to life. I used React.js with Vite to ensure a modern and efficient development process.
                 </p>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    With the release of Next.js 13.4, I was excited to explore its new features, such as the App Router, Image component,
-                    and built-in support for SSG, SSR, and SEO enhancements. Since my ongoing project was built with React,
-                    I saw the opportunity to migrate it to Next.js. However, we lacked a Node server, limiting the full potential of Next.js.
-                    I found a workaround by building the project statically using the next export command and successfully deploying it on shared hosting.
+                    When Next.js 13.4 was released, I was eager to explore its new features like the App Router,
+                    Image component, and built-in support for SSG, SSR, and SEO. Since my current project was built
+                    with React, I decided to migrate it to Next.js. However, without a Node server,
+                    I couldn&apos;t fully utilize Next.js&apos;s capabilities. I found a workaround by building the project
+                    statically using the next export command and successfully deployed it on shared hosting.
                 </p>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    During this project, I learned a lot, including using Tailwind CSS, which was easy to pick up due to my solid understanding of vanilla CSS.
-                    I also tackled browser compatibility issues for transparent animated videos, learned Framer Motion for animations, and honed my front-end skills,
-                    such as responsive design techniques and design best practices like contrast and spacing.
+                    During this project, I learned to use Tailwind CSS, which was easy to grasp thanks to my strong background in vanilla CSS.
+                    I also addressed browser compatibility issues with transparent animated videos, explored Framer Motion for animations,
+                    and improved my front-end skills, focusing on responsive design and best practices like contrast and spacing.
                 </p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <Image
                         src="/images/project-assets/timeline/home-before.jpg"
-                        alt="hero template"
+                        alt="Home page before"
                         width={780}
                         height={403}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/about-before.jpg"
-                        alt="hero template"
+                        alt="About page before"
                         width={780}
                         height={403}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/products-before.jpg"
-                        alt="hero template"
+                        alt="Project page before"
                         width={780}
                         height={403}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/services-before.jpg"
-                        alt="hero template"
+                        alt="Services before"
                         width={780}
                         height={403}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Tailwind CSS" srcImg="/images/home-assets/tech-logo/tailwind-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Framer Motion" srcImg="/images/home-assets/tech-logo/framer-motion-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Radix UI" srcImg="/images/home-assets/tech-logo/radixui-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="GitLab" srcImg="/images/home-assets/tech-logo/gitlab-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -160,29 +191,40 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    I was assigned a new project: creating a German version of our company website with the unique feature of instant content translation.
-                    Although I initially wanted to use Internationalization (i18n), the absence of a Node server led me to implement a custom solution using
-                    React's useContext. I also attended German lessons and collaborated with a German instructor to accurately translate the website content.
+                    I was tasked with creating a German version of our company website, featuring instant content translation.
+                    While I initially planned to use Internationalization (i18n), the lack of a Node server required me to
+                    implement a custom solution using React&apos;s useContext. To ensure accurate translations, I attended German
+                    lessons and worked closely with a German instructor.
                 </p>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    Throughout this project, I learned a lot, including introducing myself in German, counting, and understanding cultural do's and don'ts.
-                    I also gained knowledge in GDPR compliance and best practices by working closely with the content creator on developing the privacy policy.
-                    Additionally, I learned about managing cookies and local storage.</p>
-                <div className="grid grid-cols-2 gap-4">
+                    Throughout this project, I learned to introduce myself in German, count, and understand cultural nuances.
+                    I also gained knowledge in GDPR compliance and best practices by collaborating with the content creator on
+                    the privacy policy. Additionally, I learned about managing cookies and local storage.
+                </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <Image
                         src="/images/project-assets/timeline/home-de.jpg"
-                        alt="hero template"
-                        width={500}
-                        height={500}
-                        className="object-cover h-auto w-full"
+                        alt="Home page DE"
+                        width={780}
+                        height={402}
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/partners-de.jpg"
-                        alt="feature template"
-                        width={500}
-                        height={500}
-                        className="object-cover h-auto w-full"
+                        alt="Partner page DE"
+                        width={780}
+                        height={402}
+                        className="object-cover h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Tailwind CSS" srcImg="/images/home-assets/tech-logo/tailwind-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="GitLab" srcImg="/images/home-assets/tech-logo/gitlab-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -192,12 +234,14 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    My boss envisioned offering a free website service for clients who avail of our hospital system and affordable website services for small German businesses.
-                    To meet this goal, I conducted several weeks of research, testing various page builders. The challenge was to create websites within 1-3 days,
-                    as my boss noted that in Germany, websites could be built within a few hours, setting a high standard of at least one day for completion.</p>
-                <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">Through this project, I learned about different website builders,
-                    including their limitations—like which ones are self-hosted and cannot be exported. I gained experience using platforms like Wix, Nicepage, WordPress, and
-                    other drag-and-drop builders. However, after evaluating the options, the decision was made to focus on the Philippine market instead.</p>
+                    My boss aimed to provide a free website service for clients using our hospital system and affordable website solutions for small German businesses.
+                    To achieve this, I spent several weeks researching and testing various page builders. The challenge was to create websites within 1-3 days,
+                    as my boss mentioned that in Germany, websites can be built in just a few hours, setting a high standard of completing them within one day.
+                </p>
+                <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
+                    Through this project, I explored various website builders and their limitations, such as which ones are self-hosted and cannot be exported.
+                    I gained experience with platforms like Wix, Nicepage, WordPress, and other drag-and-drop builders. Ultimately, we decided to focus on the Philippine market.
+                </p>
             </div>
         ),
     },
@@ -206,65 +250,77 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    With no ongoing projects at the time, I decided to assist the mobile team in developing a Patient's Portal app.
-                    This allowed me to stay engaged and continue honing my skills while contributing to a critical part of our company's offerings.</p>
-                <div className="grid grid-cols-4 grid-rows-2 gap-4">
+                    With no ongoing projects at the time, I chose to help the mobile team develop a Patient's Portal app.
+                    This opportunity allowed me to stay engaged, sharpen my skills, and contribute to an important aspect of our company&apos;s offerings.
+                </p>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     <Image
                         src="/images/project-assets/timeline/login.png"
-                        alt="hero template"
+                        alt="Login"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/dashboard.png"
-                        alt="hero template"
+                        alt="Dashboard"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/menu.png"
-                        alt="hero template"
+                        alt="Menu"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/doctors.png"
-                        alt="hero template"
+                        alt="Doctors"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/booking-1.png"
-                        alt="hero template"
+                        alt="Booking 1"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full lg:hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/booking-2.png"
-                        alt="hero template"
+                        alt="Booking 2"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/booking-3.png"
-                        alt="hero template"
+                        alt="Booking 3"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full hover:scale-125 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/booking-4.png"
-                        alt="hero template"
+                        alt="Booking 4"
                         width={422}
                         height={856}
-                        className="object-cover h-auto w-full"
+                        className="object-cover h-auto w-full hover:scale-125 transition-transform duration-300"
                     />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="React Js" srcImg="/images/home-assets/tech-logo/react-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Ionic" srcImg="/images/home-assets/tech-logo/ionic-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Sass" srcImg="/images/home-assets/tech-logo/sass-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Capacitor" srcImg="/images/home-assets/tech-logo/capacitor-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="GitLab" srcImg="/images/home-assets/tech-logo/gitlab-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -281,35 +337,46 @@ export const data = [
                     driven by my passion for web development. While my colleagues were playing games at night,
                     I focused on completing the designs provided by the Graphic Designer.
                     The hard work was challenging but fulfilling, as it felt like pursuing a hobby I truly enjoy.</p>
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <Image
                         src="/images/project-assets/websites/starkfest.jpg"
-                        alt="Careers hero section"
+                        alt="Starkfest home page"
                         width={1500}
                         height={850}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/websites/zeta.jpg"
-                        alt="Careers hero section"
+                        alt="ZETA home page"
                         width={1500}
                         height={850}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/websites/prime.jpg"
-                        alt="Careers hero section"
+                        alt="Prime home page"
                         width={1500}
                         height={850}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/websites/juantahanan-before.jpg"
-                        alt="Careers hero section"
+                        alt="juantahanan home page"
                         width={1500}
                         height={850}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="JavaScript" srcImg="/images/home-assets/tech-logo/js-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Php" srcImg="/images/home-assets/tech-logo/php-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Wordpress" srcImg="/images/home-assets/tech-logo/wordpress-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Elementor" srcImg="/images/home-assets/tech-logo/elementor-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -319,28 +386,34 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    During the project, we faced an additional challenge when one of the four websites needed to be redone due to the client’s
+                    During the project, we faced an additional challenge when one of the four websites needed to be redone due to the client&apos;s
                     dissatisfaction with the previously approved design. Amidst this, a significant new project emerged: a government housing initiative.
                     I was assigned to this project because three of the websites I managed needed to integrate an application form submission for beneficiaries.
                 </p>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    I collaborated closely with the C# team to develop the necessary API for this integration, ensuring seamless functionality between the application
-                    form and the websites I handled. This added responsibility was demanding but allowed me to contribute to a high-impact project while managing multiple tasks.</p>
+                    I worked closely with the C# team to develop the API needed for integrating the application form with the websites I managed.
+                    This ensured smooth functionality and allowed me to contribute to a high-impact project while juggling multiple tasks.
+                    Despite the added responsibility, it was a valuable experience.
+                </p>
                 <div className="grid grid-cols-1 gap-4">
                     <Image
                         src="/images/project-assets/websites/juantahanan.jpg"
-                        alt="Careers hero section"
+                        alt="Juantahanan home page new design"
                         width={1500}
                         height={850}
-                        className="object-contain h-auto w-[80%] mx-auto"
+                        className="object-contain h-auto w-full lg:w-[80%] mx-auto lg:hover:scale-125 transition-transform duration-300"
                     />
-                    <Image
-                        src="/images/project-assets/timeline/juantahanan-application-form.jpg"
-                        alt="Careers hero section"
-                        width={1500}
-                        height={850}
-                        className="object-contain h-auto w-[80%] mx-auto"
-                    />
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="HTML" srcImg="/images/home-assets/tech-logo/html5-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="CSS" srcImg="/images/home-assets/tech-logo/css3-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="JavaScript" srcImg="/images/home-assets/tech-logo/js-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Php" srcImg="/images/home-assets/tech-logo/php-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Wordpress" srcImg="/images/home-assets/tech-logo/wordpress-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Elementor" srcImg="/images/home-assets/tech-logo/elementor-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -350,41 +423,55 @@ export const data = [
         content: (
             <div>
                 <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
-                    After completing all my pending projects, my final task was to integrate all sales and marketing suggestions into the websites.
-                    This included implementing Google Ads, conversion tracking, creating booking systems, setting up call-to-action (CTA) elements,
-                    and ensuring form submissions were directed to the company's CRM via API. I also created dedicated pages for each of the company's systems,
-                    optimized them for SEO, and made them searchable on Google. Lastly, I compiled comprehensive documentation for all the websites I managed,
-                    detailing the work completed and the integrations applied.</p>
-                <div className="grid grid-cols-2 gap-4">
+                    After completing all my ongoing projects, my final task was to implement all sales and marketing suggestions into the websites. This involved adding Google Ads,
+                    conversion tracking, booking systems, and call-to-action (CTA) elements, as well as ensuring form submissions were routed to the company's CRM via API.
+                    I also created dedicated pages for each of the company&apos;s SaaS products, highlighting their unique features, optimizing them for SEO,
+                    and making them searchable on Google. Finally, I compiled detailed documentation for all the websites I managed, outlining the work completed and the integrations implemented.
+                </p>
+                <p className="text-neutral-800 dark:text-neutral-200 text-sm md:text-lg font-normal mb-8">
+                    Throughout this journey, I learned a great deal and am very grateful for my time with the company. I had the opportunity to work with many talented and amazing people,
+                    which made the experience even more rewarding.
+                </p>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <Image
                         src="/images/project-assets/timeline/home-after.jpg"
-                        alt="Careers hero section"
+                        alt="Home page after"
                         width={780}
                         height={403}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/services-after.jpg"
-                        alt="Careers hero section"
+                        alt="Services after"
                         width={780}
                         height={403}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/home-products-section.jpg"
-                        alt="Careers hero section"
+                        alt="Home products section"
                         width={780}
                         height={403}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
                     <Image
                         src="/images/project-assets/timeline/contact-after.jpg"
-                        alt="Careers hero section"
+                        alt="Contact page after"
                         width={780}
                         height={403}
-                        className="object-contain h-auto w-full"
+                        className="object-contain h-auto w-full lg:hover:scale-150 transition-transform duration-300"
                     />
-
+                </div>
+                <div className="my-8 flex-row">
+                    <h3 className='font-bold'>Technology used:</h3>
+                    <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
+                        <TechIconBtn title="Next Js" srcImg="/images/home-assets/tech-logo/nextjs-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="TypeScript" srcImg="/images/home-assets/tech-logo/typescript-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Tailwind CSS" srcImg="/images/home-assets/tech-logo/tailwind-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Framer Motion" srcImg="/images/home-assets/tech-logo/framer-motion-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="Radix UI" srcImg="/images/home-assets/tech-logo/radixui-logo.png" style="dark:invert h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                        <TechIconBtn title="GitLab" srcImg="/images/home-assets/tech-logo/gitlab-logo.png" style="h-[3rem] lg:h-[4rem] w-auto mx-auto" />
+                    </div>
                 </div>
             </div>
         ),
@@ -393,8 +480,8 @@ export const data = [
 
 const ProjectSection = () => {
     return (
-        <Section className="py-20 lg:py-40">
-            <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Project Details</H2>
+        <Section className="py-20 lg:py-40 !px-0">
+            <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Project Timeline</H2>
             <Timeline data={data} />
         </Section>
     )
