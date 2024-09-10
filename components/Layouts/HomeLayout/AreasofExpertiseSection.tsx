@@ -1,6 +1,9 @@
 import Section from '@/components/Section'
 import Card3D from '@/components/Card3D';
 import H2 from '@/components/H2';
+import { Button } from '@/components/ui/moving-border';
+import { FaArrowRight } from 'react-icons/fa';
+import Link from 'next/link';
 
 export const cardData = [
     {
@@ -35,13 +38,19 @@ export const cardData = [
 const AreasofExpertiseSection = () => {
 
     return (
-        <Section className="py-20 lg:py-40  flex flex-col justify-center dark:bg-grad-black bg-grad-white bg-cover">
+        <Section className="py-20 lg:py-40  flex flex-col justify-center items-center dark:bg-grad-black bg-grad-white bg-cover">
             <H2 borderStyle="after:w-[125%] md:after:w-[120%]">Areas of Expertise</H2>
             <div className="flex flex-wrap justify-center gap-10 mt-5">
                 {cardData.map((card) => (
                     <Card3D key={card.title} title={card.title} description={card.description} cardData={card.listItems} />
                 ))}
             </div>
+            <div className="mt-10">
+                <Link href={'/project'}><Button className="dark:bg-white bg-primaryBlack dark:hover:bg-black flex hover:bg-white font-semibold font-heading text-primaryWhite dark:text-primaryBlack  dark:text-primaryBlack/80 text-primaryWhite/80 hover:text-primaryBlack dark:hover:text-primaryWhite rounded-none border-[3px] hover:border-accentRed px-5 py-2 border-primaryWhite dark:border-primaryBlack gap-2">See It in Action<FaArrowRight /></Button></Link>
+            </div>
+
+
+
         </Section>
     )
 }
