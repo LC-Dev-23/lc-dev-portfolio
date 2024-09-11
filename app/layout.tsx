@@ -64,7 +64,7 @@ export default function RootLayout({
       <body className={"dark:bg-primaryBlack bg-primaryWhite min-w-[20rem] min-h-[28.5] scroll-smooth"}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
