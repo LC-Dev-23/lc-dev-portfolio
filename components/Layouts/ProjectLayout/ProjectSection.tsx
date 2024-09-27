@@ -253,7 +253,7 @@ export const data = [
                     With no ongoing projects at the time, I chose to help the mobile team develop a Patient&apos;s Portal app.
                     This opportunity allowed me to stay engaged, sharpen my skills, and contribute to an important aspect of our company&apos;s offerings.
                 </p>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     <Image
                         src="/images/project-assets/timeline/login.png"
                         alt="Login"
@@ -310,7 +310,7 @@ export const data = [
                         height={856}
                         className="object-cover h-auto w-full hover:scale-125 transition-transform duration-300"
                     />
-                </div>
+                </div> */}
                 <div className="my-8 flex-row">
                     <h3 className="font-bold">Technology used:</h3>
                     <div className="flex flex-wrap mt-5 gap-5 lg:gap-10 justify-center">
