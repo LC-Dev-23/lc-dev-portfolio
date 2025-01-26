@@ -19,9 +19,9 @@ const Footer = () => {
               priority={true}
             />
           </Link>
-          <ul>
+          {/* <ul>
             <li><Link className="flex items-center gap-2 font-semibold" href="https://maps.app.goo.gl/wF9G8z9dvMfiUNaMA" target="_blank"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaMapMarkerAlt /></span>Teresa, Rizal, Philippines</Link></li>
-          </ul>
+          </ul> */}
         </div>
         <div>
           <p className="font-heading font-bold pb-2 text-accentLightRed dark:text-accentDarkRed">Find me on</p>
@@ -31,10 +31,12 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p className="font-heading font-bold pb-2 text-accentLightRed dark:text-accentDarkRed">Contact Info</p>
+          {/* <p className="font-heading font-bold pb-2 text-accentLightRed dark:text-accentDarkRed">Contact Info</p> */}
           <ul className="text-left flex flex-col gap-2 justify-center">
-            <li><Link className="flex items-center gap-2 font-semibold" href="mailto:lordchristianagra23@gmail.com"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaEnvelope /></span>lordchristianagra23@gmail.com</Link></li>
-            <li><Link className="flex items-center gap-2 font-semibold" href="tel:639489214499"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaPhoneAlt /></span>+63 948 921 4499</Link></li>
+            {/* <li><Link className="flex items-center gap-2 font-semibold" href="mailto:lordchristianagra23@gmail.com"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaEnvelope /></span>lordchristianagra23@gmail.com</Link></li>
+            <li><Link className="flex items-center gap-2 font-semibold" href="tel:639489214499"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaPhoneAlt /></span>+63 948 921 4499</Link></li> */}
+            <li><Link className="flex items-center gap-2 font-semibold" href="https://maps.app.goo.gl/wF9G8z9dvMfiUNaMA" target="_blank"><span className="text-accentLightRed dark:text-accentDarkRed border border-white/[0.2] dark:border-black/[0.2] dark:shadow-none shadow-md rounded-xl p-2"><FaMapMarkerAlt /></span>Teresa, Rizal, Philippines</Link></li>
+
           </ul>
         </div>
       </div>
