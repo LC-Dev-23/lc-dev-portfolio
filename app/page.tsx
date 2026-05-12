@@ -1,5 +1,5 @@
 import HeroSection from '@/components/Layouts/HomeLayout/HeroSection'
-import AreasOfExpertiseSection from '@/components/Layouts/HomeLayout/AreasOfExpertiseSection'
+import AreasOfExpertiseSection from '@/components/Layouts/HomeLayout/AreasofExpertiseSection1'
 import PersonalProficienciesSection from '@/components/Layouts/HomeLayout/PersonalProficienciesSection'
 import TechArsenalSection from '@/components/Layouts/HomeLayout/TechArsenalSection'
 import Attribution from '@/components/Attribution'
