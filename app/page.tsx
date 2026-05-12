@@ -1,15 +1,16 @@
 import HeroSection from '@/components/Layouts/HomeLayout/HeroSection'
-import AreasofExpertiseSection from '@/components/Layouts/HomeLayout/AreasofExpertiseSection'
+import AreasOfExpertiseSection from '@/components/Layouts/HomeLayout/AreasOfExpertiseSection'
 import PersonalProficienciesSection from '@/components/Layouts/HomeLayout/PersonalProficienciesSection'
 import TechArsenalSection from '@/components/Layouts/HomeLayout/TechArsenalSection'
 import Attribution from '@/components/Attribution'
+
 
 const HomePage = () => {
   
   return (
     <main>
       <HeroSection />
-      <AreasofExpertiseSection />
+      <AreasOfExpertiseSection />
       <PersonalProficienciesSection />
       <TechArsenalSection />
       <Attribution />

@@ -35,7 +35,7 @@ export const cardData = [
     // },
 ];
 
-const AreasofExpertiseSection = () => {
+const AreasOfExpertiseSection = () => {
 
     return (
         <Section className="py-20 lg:py-40  flex flex-col justify-center items-center dark:bg-grad-black bg-grad-white bg-cover">
@@ -55,4 +55,4 @@ const AreasofExpertiseSection = () => {
     )
 }
 
-export default AreasofExpertiseSection
+export default AreasOfExpertiseSection
